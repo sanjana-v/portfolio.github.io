@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Sanjana Venkatesh — Awards & Recognition." />
+  <title>Awards | Sanjana Venkatesh</title>
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script defer src="js/main.js"></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="header">
+    <div class="container header__inner">
+      <a class="brand" href="index.html" aria-label="Home">
+        <span class="brand__mark" aria-hidden="true"></span>
+        <span class="brand__text">Sanjana Venkatesh</span>
+      </a>
+      <button class="nav__toggle" type="button" data-nav-toggle aria-controls="site-nav" aria-expanded="false">
+        <span class="nav__toggle-bar" aria-hidden="true"></span>
+        <span class="sr-only">Open menu</span>
+      </button>
+      <nav id="site-nav" class="nav" data-nav>
+        <a href="index.html" data-nav-link>Home</a>
+        <a href="experience.html" data-nav-link>Experience</a>
+        <a href="projects.html" data-nav-link>Projects</a>
+        <a href="certifications.html" data-nav-link>Certifications</a>
+        <a href="awards.html" data-nav-link>Awards</a>
+        <a href="resume.html" data-nav-link>Resume</a>
+        <a href="publications.html" data-nav-link>Publications</a>
+        <a class="btn btn--primary" href="index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="page">
+    <section class="container">
+      <h1 class="page__title" data-reveal>Awards & Recognition</h1>
+      <p class="page__lead" data-reveal>
+        A snapshot of outcomes recognized by stakeholders and peers.
+      </p>
+
+      <div class="grid grid--2 mt24">
+        <div class="card" data-reveal>
+          <div class="kicker">USC Capstone (2024)</div>
+          <h2 class="h3">1st Place — Intelligent Fab Monitoring & Maintenance System</h2>
+          <p class="muted">
+            Built a real-time geospatial analytics platform for semiconductor fab monitoring, including geofencing and XGBoost-based RUL prediction.
+          </p>
+          <ul class="list">
+            <li>Tracked 2M+ RTLS devices; processed 100K+ logs/day</li>
+            <li>Achieved 82% RUL prediction accuracy</li>
+            <li>Enabled event-driven alerts; reduced equipment downtime</li>
+          </ul>
+          <img class="img mt16" src="assets/img/award-capstone.png" alt="Placeholder image for capstone award" loading="lazy" />
+        </div>
+
+        <div class="card" data-reveal>
+          <div class="kicker">Quantiphi</div>
+          <h2 class="h3">Recognized for $10M+ Annual Infrastructure Cost Savings</h2>
+          <p class="muted">
+            Led legacy Hadoop modernization to GCP and optimized Spark workloads to materially reduce infrastructure spend.
+          </p>
+          <ul class="list">
+            <li>Modernized 1,500+ Hadoop/MapReduce jobs to Dataproc</li>
+            <li>Optimized Spark parameters (executors, shuffle, SSD balancing)</li>
+            <li>Delivered audit-ready reporting with 99%+ data accuracy</li>
+          </ul>
+          <img class="img mt16" src="assets/img/award-quantiphi.png" alt="Placeholder image for recognition" loading="lazy" />
+        </div>
+      </div>
+
+      <div class="card mt24" data-reveal>
+        <h2 class="h3">Additional Highlights</h2>
+        <div class="grid grid--3 mt16">
+          <div class="mini">
+            <div class="mini__k">$1.2M+</div>
+            <div class="mini__v">Annual savings enabled by Looker metrics layer insights</div>
+          </div>
+          <div class="mini">
+            <div class="mini__k">$23K</div>
+            <div class="mini__v">Annual AWS savings via EC2 right-sizing</div>
+          </div>
+          <div class="mini">
+            <div class="mini__k">42%</div>
+            <div class="mini__v">Reduced ingestion latency via API-to-Snowflake automation</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <div class="brand brand--footer">
+          <span class="brand__mark" aria-hidden="true"></span>
+          <span class="brand__text">Sanjana Venkatesh</span>
+        </div>
+        <p class="muted">Data Engineer | Analytics | Cloud Solutions</p>
+      </div>
+      <div>
+        <p class="footer__title">Links</p>
+        <div class="footer__links">
+          <a href="projects.html">Projects</a>
+          <a href="experience.html">Experience</a>
+          <a href="certifications.html">Certifications</a>
+          <a href="index.html#contact">Contact</a>
+        </div>
+      </div>
+      <div>
+        <p class="footer__title">Contact</p>
+        <p class="muted"><a href="mailto:sv51119@usc.edu">sv51119@usc.edu</a><br/>
+          <a href="tel:+12139131568">(213) 913-1568</a><br/>
+          Los Angeles, CA</p>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <p class="subtle">© <span id="y"></span> Sanjana Venkatesh. Built with HTML/CSS/JS.</p>
+    </div>
+    <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+  </footer>
+</body>
+</html>

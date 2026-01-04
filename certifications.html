@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Sanjana Venkatesh — Certifications and Skills." />
+  <title>Certifications | Sanjana Venkatesh</title>
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script defer src="js/main.js"></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="header">
+    <div class="container header__inner">
+      <a class="brand" href="index.html" aria-label="Home">
+        <span class="brand__mark" aria-hidden="true"></span>
+        <span class="brand__text">Sanjana Venkatesh</span>
+      </a>
+      <button class="nav__toggle" type="button" data-nav-toggle aria-controls="site-nav" aria-expanded="false">
+        <span class="nav__toggle-bar" aria-hidden="true"></span>
+        <span class="sr-only">Open menu</span>
+      </button>
+      <nav id="site-nav" class="nav" data-nav>
+        <a href="index.html" data-nav-link>Home</a>
+        <a href="experience.html" data-nav-link>Experience</a>
+        <a href="projects.html" data-nav-link>Projects</a>
+        <a href="certifications.html" data-nav-link>Certifications</a>
+        <a href="awards.html" data-nav-link>Awards</a>
+        <a href="resume.html" data-nav-link>Resume</a>
+        <a href="publications.html" data-nav-link>Publications</a>
+        <a class="btn btn--primary" href="index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="page">
+    <section class="container">
+      <h1 class="page__title" data-reveal>Certifications & Technical Skills</h1>
+      <p class="page__lead" data-reveal>
+        A modern data engineering toolkit spanning cloud platforms, orchestration, analytics, and ML infrastructure.
+      </p>
+
+      <div class="grid grid--2 mt24">
+        <div class="card" data-reveal>
+          <h2 class="h3">Certifications</h2>
+          <ul class="list">
+            <li><strong>Google Cloud Certified: Associate Cloud Engineer</strong> — infrastructure deployment, cloud administration, and core GCP services.</li>
+          </ul>
+          <div class="callout mt16">
+            <p class="muted">Tip: replace the placeholder certificate image with your actual badge screenshot.</p>
+            <img class="img" src="assets/img/cert-gcp.png" alt="Placeholder certificate image" loading="lazy" />
+          </div>
+        </div>
+
+        <div class="card" data-reveal>
+          <h2 class="h3">Core Strengths</h2>
+          <div class="chips chips--wrap">
+            <span class="chip">Big Data & Cloud Architecture</span>
+            <span class="chip">Data Pipeline Orchestration</span>
+            <span class="chip">SQL Optimization</span>
+            <span class="chip">ETL/ELT Design</span>
+            <span class="chip">Data Quality & Governance</span>
+            <span class="chip">ML Pipelines (Vertex AI)</span>
+            <span class="chip">Cost Optimization</span>
+            <span class="chip">Infra Modernization</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid grid--3 mt24">
+        <div class="card" data-reveal>
+          <h3 class="h4">Languages & Query</h3>
+          <ul class="list">
+            <li>Python (advanced) — data manipulation, automation, ML</li>
+            <li>SQL (advanced) — BigQuery, PostgreSQL, performance tuning</li>
+            <li>PySpark — distributed processing</li>
+            <li>Bash — scripting & automation</li>
+            <li>Java, C++ — proficient</li>
+          </ul>
+        </div>
+        <div class="card" data-reveal>
+          <h3 class="h4">Cloud Platforms</h3>
+          <ul class="list">
+            <li>GCP: BigQuery, GCS, Dataproc, Vertex AI, Cloud Composer, Cloud Functions</li>
+            <li>AWS: S3, EC2, Redshift, AWS Lambda</li>
+            <li>Snowflake: warehousing & performance optimization</li>
+          </ul>
+        </div>
+        <div class="card" data-reveal>
+          <h3 class="h4">Data & Analytics Tooling</h3>
+          <ul class="list">
+            <li>Apache Airflow, dbt, Apache Kafka</li>
+            <li>Power BI (DAX), Tableau, Looker (LookML), ThoughtSpot</li>
+            <li>Data Validation Tool (DVT), SQL validation frameworks</li>
+            <li>Git, CI/CD automation, Azure DevOps</li>
+            <li>Terraform, Docker concepts, monitoring & alerting</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <div class="brand brand--footer">
+          <span class="brand__mark" aria-hidden="true"></span>
+          <span class="brand__text">Sanjana Venkatesh</span>
+        </div>
+        <p class="muted">Data Engineer | Analytics | Cloud Solutions</p>
+      </div>
+      <div>
+        <p class="footer__title">Links</p>
+        <div class="footer__links">
+          <a href="projects.html">Projects</a>
+          <a href="experience.html">Experience</a>
+          <a href="resume.html">Resume</a>
+          <a href="index.html#contact">Contact</a>
+        </div>
+      </div>
+      <div>
+        <p class="footer__title">Contact</p>
+        <p class="muted"><a href="mailto:sv51119@usc.edu">sv51119@usc.edu</a><br/>
+          <a href="tel:+12139131568">(213) 913-1568</a><br/>
+          Los Angeles, CA</p>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <p class="subtle">© <span id="y"></span> Sanjana Venkatesh. Built with HTML/CSS/JS.</p>
+    </div>
+    <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Sanjana Venkatesh — Resume." />
+  <title>Resume | Sanjana Venkatesh</title>
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script defer src="js/main.js"></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="header">
+    <div class="container header__inner">
+      <a class="brand" href="index.html" aria-label="Home">
+        <span class="brand__mark" aria-hidden="true"></span>
+        <span class="brand__text">Sanjana Venkatesh</span>
+      </a>
+      <button class="nav__toggle" type="button" data-nav-toggle aria-controls="site-nav" aria-expanded="false">
+        <span class="nav__toggle-bar" aria-hidden="true"></span>
+        <span class="sr-only">Open menu</span>
+      </button>
+      <nav id="site-nav" class="nav" data-nav>
+        <a href="index.html" data-nav-link>Home</a>
+        <a href="experience.html" data-nav-link>Experience</a>
+        <a href="projects.html" data-nav-link>Projects</a>
+        <a href="certifications.html" data-nav-link>Certifications</a>
+        <a href="awards.html" data-nav-link>Awards</a>
+        <a href="resume.html" data-nav-link>Resume</a>
+        <a href="publications.html" data-nav-link>Publications</a>
+        <a class="btn btn--primary" href="index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="page">
+    <section class="container">
+      <h1 class="page__title" data-reveal>Resume</h1>
+      <p class="page__lead" data-reveal>
+        Replace <code>assets/resume.pdf</code> with your latest resume PDF and keep the same filename.
+      </p>
+
+      <div class="card mt24" data-reveal>
+        <div class="flex">
+          <a class="btn btn--primary" href="assets/resume.pdf" download>Download Resume (PDF)</a>
+          <a class="btn btn--ghost" href="assets/resume.pdf" target="_blank" rel="noopener">Open in New Tab</a>
+        </div>
+
+        <div class="embed mt16" aria-label="Resume preview">
+          <object data="assets/resume.pdf" type="application/pdf" width="100%" height="800">
+            <p class="muted">PDF preview is not available in this browser. Use the download button above.</p>
+          </object>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <div class="brand brand--footer">
+          <span class="brand__mark" aria-hidden="true"></span>
+          <span class="brand__text">Sanjana Venkatesh</span>
+        </div>
+        <p class="muted">Data Engineer | Analytics | Cloud Solutions</p>
+      </div>
+      <div>
+        <p class="footer__title">Links</p>
+        <div class="footer__links">
+          <a href="experience.html">Experience</a>
+          <a href="projects.html">Projects</a>
+          <a href="certifications.html">Certifications</a>
+          <a href="index.html#contact">Contact</a>
+        </div>
+      </div>
+      <div>
+        <p class="footer__title">Contact</p>
+        <p class="muted"><a href="mailto:sv51119@usc.edu">sv51119@usc.edu</a><br/>
+          <a href="tel:+12139131568">(213) 913-1568</a><br/>
+          Los Angeles, CA</p>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <p class="subtle">© <span id="y"></span> Sanjana Venkatesh. Built with HTML/CSS/JS.</p>
+    </div>
+    <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+  </footer>
+</body>
+</html>

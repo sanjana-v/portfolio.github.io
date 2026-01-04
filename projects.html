@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Sanjana Venkatesh — Projects." />
+  <title>Projects | Sanjana Venkatesh</title>
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script defer src="js/main.js"></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="header">
+    <div class="container header__inner">
+      <a class="brand" href="index.html" aria-label="Home">
+        <span class="brand__mark" aria-hidden="true"></span>
+        <span class="brand__text">Sanjana Venkatesh</span>
+      </a>
+
+      <button class="nav__toggle" type="button" data-nav-toggle aria-controls="site-nav" aria-expanded="false">
+        <span class="nav__toggle-bar" aria-hidden="true"></span>
+        <span class="sr-only">Open menu</span>
+      </button>
+
+      <nav id="site-nav" class="nav" data-nav>
+        <a href="index.html" data-nav-link>Home</a>
+        <a href="experience.html" data-nav-link>Experience</a>
+        <a href="projects.html" data-nav-link>Projects</a>
+        <a href="certifications.html" data-nav-link>Certifications</a>
+        <a href="awards.html" data-nav-link>Awards</a>
+        <a href="resume.html" data-nav-link>Resume</a>
+        <a href="publications.html" data-nav-link>Publications</a>
+        <a class="btn btn--primary" href="index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <p class="badge" data-reveal>Selected Work</p>
+        <h1 class="page-title" data-reveal>Projects</h1>
+        <p class="page-subtitle" data-reveal>
+          A selection of data engineering, analytics, and machine learning systems—ranging from large-scale ETL/ELT and real-time streaming
+          to retrieval-augmented generation and predictive maintenance.
+        </p>
+
+        <div class="filters" data-project-filters data-reveal>
+          <button class="filter is-active" type="button" data-filter="all">All</button>
+          <button class="filter" type="button" data-filter="data-engineering">Data Engineering</button>
+          <button class="filter" type="button" data-filter="ml">Machine Learning</button>
+          <button class="filter" type="button" data-filter="cloud">Cloud</button>
+          <button class="filter" type="button" data-filter="streaming">Streaming</button>
+          <button class="filter" type="button" data-filter="analytics">Analytics</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container stack">
+
+        <article class="project" data-project-card data-tags="ml,cloud">
+          <img class="project__img" src="assets/img/project-anime.png" alt="Placeholder image for Anime Recommendation System" loading="lazy" />
+          <div class="project__body">
+            <div class="project__top">
+              <h2 class="h3">Anime Recommendation System (RAG)</h2>
+              <span class="badge badge--muted">Aug 2025 – Sep 2025</span>
+            </div>
+            <p class="muted">Built a natural-language recommendation engine using a production-ready Retrieval-Augmented Generation pipeline.</p>
+            <ul class="bullets">
+              <li>Orchestrated RAG with LangChain; embedded titles, genres, synopses, and metadata using OpenAI embeddings.</li>
+              <li>Implemented LanceDB vector store for fast similarity search and top-N retrieval; optimized indexing for low-latency queries.</li>
+              <li>Generated explainable recommendations with rationale and confidence ranking.</li>
+            </ul>
+            <div class="chips">
+              <span class="chip">LangChain</span><span class="chip">OpenAI Embeddings</span><span class="chip">LanceDB</span><span class="chip">Python</span>
+            </div>
+            <div class="kpis">
+              <div class="kpi"><span class="kpi__k">Engagement</span><span class="kpi__v">+25%</span></div>
+              <div class="kpi"><span class="kpi__k">Latency</span><span class="kpi__v">&lt; 500ms</span></div>
+              <div class="kpi"><span class="kpi__k">Experimentation</span><span class="kpi__v">10× faster</span></div>
+            </div>
+          </div>
+        </article>
+
+        <article class="project" data-project-card data-tags="data-engineering,cloud,analytics">
+          <img class="project__img" src="assets/img/project-retail.png" alt="Placeholder image for Retail Data Analytics" loading="lazy" />
+          <div class="project__body">
+            <div class="project__top">
+              <h2 class="h3">Retail Data Analytics</h2>
+              <span class="badge badge--muted">Mar 2024 – Jul 2024</span>
+            </div>
+            <p class="muted">Designed an end-to-end ETL pipeline and analytics layer to enable reliable daily refresh SLAs and self-serve reporting.</p>
+            <ul class="bullets">
+              <li>Automated ingestion from Google Cloud Storage to BigQuery using Apache Airflow and Python.</li>
+              <li>Built dbt models with star schema design, data quality tests, and query optimization (partitioning, clustering).</li>
+              <li>Delivered Power BI dashboards with DAX calculations for product and market analysis.</li>
+            </ul>
+            <div class="chips">
+              <span class="chip">Airflow</span><span class="chip">BigQuery</span><span class="chip">dbt</span><span class="chip">Power BI</span><span class="chip">SQL</span>
+            </div>
+            <div class="kpis">
+              <div class="kpi"><span class="kpi__k">Latency</span><span class="kpi__v">2h → 12m</span></div>
+              <div class="kpi"><span class="kpi__k">Reduction</span><span class="kpi__v">83%</span></div>
+              <div class="kpi"><span class="kpi__k">Manual reporting</span><span class="kpi__v">-48%</span></div>
+            </div>
+          </div>
+        </article>
+
+        <article class="project" data-project-card data-tags="data-engineering,ml,streaming,cloud">
+          <img class="project__img" src="assets/img/project-fab.png" alt="Placeholder image for Intelligent Fab Monitoring" loading="lazy" />
+          <div class="project__body">
+            <div class="project__top">
+              <h2 class="h3">Intelligent Fab Monitoring &amp; Maintenance System</h2>
+              <span class="badge badge--muted">Jan 2024 – Mar 2024</span>
+            </div>
+            <p class="muted">Real-time geospatial analytics platform for semiconductor fab monitoring (1st Place capstone).</p>
+            <ul class="bullets">
+              <li>Tracked 2M+ RTLS devices; processed 100K+ logs/day with cleaning, geofencing, feature engineering, and time-series decomposition.</li>
+              <li>Trained XGBoost Remaining Useful Life models achieving 82% accuracy; delivered event-driven alerts and KPI dashboards.</li>
+              <li>Reduced downtime by eliminating manual monitoring overhead through real-time analytics.</li>
+            </ul>
+            <div class="chips">
+              <span class="chip">GCP</span><span class="chip">BigQuery</span><span class="chip">XGBoost</span><span class="chip">Geospatial</span><span class="chip">Flask</span><span class="chip">React</span>
+            </div>
+            <div class="kpis">
+              <div class="kpi"><span class="kpi__k">Accuracy</span><span class="kpi__v">82%</span></div>
+              <div class="kpi"><span class="kpi__k">Devices</span><span class="kpi__v">2M+</span></div>
+              <div class="kpi"><span class="kpi__k">Logs/day</span><span class="kpi__v">100K+</span></div>
+            </div>
+          </div>
+        </article>
+
+        <article class="project" data-project-card data-tags="analytics,data-engineering">
+          <img class="project__img" src="assets/img/project-airbnb.png" alt="Placeholder image for Airbnb Analytics" loading="lazy" />
+          <div class="project__body">
+            <div class="project__top">
+              <h2 class="h3">Airbnb Occupancy &amp; Revenue Analytics</h2>
+              <span class="badge badge--muted">Academic Project</span>
+            </div>
+            <p class="muted">PySpark analytics and predictive modeling for Los Angeles County listings with external feature enrichment.</p>
+            <ul class="bullets">
+              <li>Built distributed pipelines with PySpark and Spark SQL; integrated crime and transit accessibility datasets.</li>
+              <li>Achieved 76% accuracy in price forecasting through feature engineering and model optimization.</li>
+            </ul>
+            <div class="chips">
+              <span class="chip">PySpark</span><span class="chip">Spark SQL</span><span class="chip">Python</span><span class="chip">Statistical Analysis</span>
+            </div>
+            <div class="kpis">
+              <div class="kpi"><span class="kpi__k">Forecast accuracy</span><span class="kpi__v">76%</span></div>
+              <div class="kpi"><span class="kpi__k">Region</span><span class="kpi__v">LA County</span></div>
+            </div>
+          </div>
+        </article>
+
+        <article class="project" data-project-card data-tags="ml">
+          <img class="project__img" src="assets/img/project-covid-vision.png" alt="Placeholder image for Covid-19 Violation Monitor" loading="lazy" />
+          <div class="project__body">
+            <div class="project__top">
+              <h2 class="h3">Covid-19 Violation Monitor</h2>
+              <span class="badge badge--muted">Academic Project</span>
+            </div>
+            <p class="muted">Computer vision system detecting mask compliance in surveillance videos for real-time violation monitoring.</p>
+            <ul class="bullets">
+              <li>Used RetinaFace for face detection and Xception classifier for mask vs. no-mask inference.</li>
+              <li>Processed video streams and surfaced violations for rapid response workflows.</li>
+            </ul>
+            <div class="chips">
+              <span class="chip">Python</span><span class="chip">OpenCV</span><span class="chip">RetinaFace</span><span class="chip">Xception</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project" data-project-card data-tags="ml">
+          <img class="project__img" src="assets/img/project-covid-chatbot.png" alt="Placeholder image for Covid-19 Chatbot" loading="lazy" />
+          <div class="project__body">
+            <div class="project__top">
+              <h2 class="h3">Covid-19 Chatbot</h2>
+              <span class="badge badge--muted">Academic Project</span>
+            </div>
+            <p class="muted">Flask-based NLP chatbot for Covid-19 queries with deep learning intent classification.</p>
+            <ul class="bullets">
+              <li>Implemented Keras Sequential model for intent classification with NLTK preprocessing.</li>
+              <li>Reached 76% accuracy in question answering on benchmarked query sets.</li>
+            </ul>
+            <div class="chips">
+              <span class="chip">Flask</span><span class="chip">Keras</span><span class="chip">NLTK</span><span class="chip">NLP</span>
+            </div>
+            <div class="kpis">
+              <div class="kpi"><span class="kpi__k">Accuracy</span><span class="kpi__v">76%</span></div>
+            </div>
+          </div>
+        </article>
+
+        <article class="project" data-project-card data-tags="analytics">
+          <img class="project__img" src="assets/img/project-market-basket.png" alt="Placeholder image for Market Basket Analysis" loading="lazy" />
+          <div class="project__body">
+            <div class="project__top">
+              <h2 class="h3">Customer Market Basket Analysis</h2>
+              <span class="badge badge--muted">Academic Project</span>
+            </div>
+            <p class="muted">Association rule mining for transaction datasets and personalized recommendations based on frequent itemsets.</p>
+            <ul class="bullets">
+              <li>Applied Apriori and FP-Growth to discover item associations and frequent patterns.</li>
+              <li>Built recommendation utilities leveraging discovered rules and customer behavior.</li>
+            </ul>
+            <div class="chips">
+              <span class="chip">Python</span><span class="chip">Apriori</span><span class="chip">FP-Growth</span><span class="chip">Jupyter</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="section section--tight">
+      <div class="container">
+        <div class="cta" data-reveal>
+          <div>
+            <h2 class="h3">Want to see the code?</h2>
+            <p class="muted">Browse the repositories and featured work on GitHub.</p>
+          </div>
+          <div class="cta__actions">
+            <a class="btn btn--primary" href="https://github.com/sanjana-v" target="_blank" rel="noopener noreferrer">GitHub Profile</a>
+            <a class="btn btn--ghost" href="index.html#contact">Contact</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <div class="brand brand--footer">
+          <span class="brand__mark" aria-hidden="true"></span>
+          <span class="brand__text">Sanjana Venkatesh</span>
+        </div>
+        <p class="muted">Data Engineer | Analytics | Cloud Solutions</p>
+      </div>
+      <div>
+        <h3 class="footer__title">Links</h3>
+        <div class="footer__links">
+          <a href="experience.html">Experience</a>
+          <a href="projects.html">Projects</a>
+          <a href="resume.html">Resume</a>
+        </div>
+      </div>
+      <div>
+        <h3 class="footer__title">Contact</h3>
+        <div class="footer__links">
+          <a href="mailto:sv51119@usc.edu">sv51119@usc.edu</a>
+          <a href="https://linkedin.com/in/sanjana-venkatesh-24557a199/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="https://github.com/sanjana-v" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </div>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <span>© <span id="y"></span> Sanjana Venkatesh. All rights reserved.</span>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
