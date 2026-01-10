@@ -5,32 +5,184 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="Sanjana Venkatesh — Experience in Data Engineering, Analytics Engineering, and Applied AI." />
   <title>Experience | Sanjana Venkatesh</title>
+
   <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="css/style.css" />
   <script defer src="js/main.js"></script>
 
-  <!-- Page-local styles for the new logo + icon elements.
-       If you prefer, move these rules into css/style.css. -->
+  <!-- Page-local styles (you may move these into css/style.css if you prefer) -->
   <style>
-    .orgstrip{display:flex;align-items:center;gap:12px;margin-top:14px;flex-wrap:wrap}
-    .orgstrip__logos{display:flex;gap:10px;flex-wrap:wrap}
-    .orgstrip__logo{width:34px;height:34px;border-radius:10px;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.04);padding:6px}
+    /* =========================
+       FEATURED SECTION (TOP 4)
+       ========================= */
+    .orgstrip{
+      display:flex;
+      align-items:center;
+      gap:12px;
+      margin-top:14px;
+      flex-wrap:wrap;
+
+      /* Optional "featured band" styling so the row feels intentional */
+      padding:10px 12px;
+      border-radius:16px;
+      border:1px solid rgba(255,255,255,.10);
+      background: rgba(255,255,255,.03);
+    }
+
+    .orgstrip__logos{
+      display:flex;
+      gap:14px;
+      flex-wrap:wrap;
+      align-items:center;
+    }
+
+    .orgstrip__logo{
+      width:46px;
+      height:46px;
+      border-radius:14px;
+      padding:10px;
+      background: rgba(255,255,255,.07);
+      border: 1px solid rgba(255,255,255,.20);
+
+      /* “pop out” look */
+      box-shadow:
+        0 1px 0 rgba(255,255,255,.08) inset,
+        0 18px 40px rgba(0,0,0,.35);
+
+      outline: 2px solid rgba(255,255,255,.05);
+      outline-offset: 2px;
+
+      transform: translateY(0) scale(1);
+      transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease, background .18s ease;
+    }
+
+    .orgstrip__logo:hover{
+      transform: translateY(-4px) scale(1.05);
+      background: rgba(255,255,255,.10);
+      border-color: rgba(255,255,255,.30);
+      box-shadow:
+        0 1px 0 rgba(255,255,255,.10) inset,
+        0 24px 60px rgba(0,0,0,.45);
+    }
+
+    @media (max-width: 520px){
+      .orgstrip__logo{
+        width:42px;
+        height:42px;
+        border-radius:13px;
+        padding:9px;
+      }
+    }
+
+    /* =========================
+       EXPERIENCE HEADER (LOGO)
+       ========================= */
     .card__head--withlogo{gap:14px}
     .org{display:flex;align-items:flex-start;gap:12px}
-    .org__logo{width:36px;height:36px;border-radius:12px;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.04);padding:7px;flex:0 0 auto}
+    .org__logo{
+      width:36px;
+      height:36px;
+      border-radius:12px;
+      border:1px solid rgba(255,255,255,.12);
+      background:rgba(255,255,255,.04);
+      padding:7px;
+      flex:0 0 auto
+    }
     .org__title{min-width:0}
     .org__meta{display:flex;gap:10px;flex-wrap:wrap}
     .org__meta span{white-space:nowrap}
-    .metric__icon{width:20px;height:20px;display:inline-flex;align-items:center;justify-content:center;margin-right:10px;opacity:.9}
+
+    /* =========================
+       METRIC ICONS
+       ========================= */
+    .metric__icon{
+      width:20px;
+      height:20px;
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      margin-right:10px;
+      opacity:.9
+    }
     .metric__k{display:flex;align-items:center}
+
     .subsection__label{letter-spacing:.08em;text-transform:uppercase;font-size:.78rem}
+
+    /* =========================
+       KEY OUTCOME BOXES
+       ========================= */
     .impact{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:14px}
     @media (max-width:720px){.impact{grid-template-columns:1fr}}
-    .impact__item{padding:12px;border:1px solid rgba(255,255,255,.10);border-radius:14px;background:rgba(255,255,255,.03)}
+    .impact__item{
+      padding:12px;
+      border:1px solid rgba(255,255,255,.10);
+      border-radius:14px;
+      background:rgba(255,255,255,.03)
+    }
     .impact__k{font-weight:650}
     .impact__v{opacity:.85;margin-top:4px}
+
+    /* =========================
+       TECH STACK "BUBBLE" CHIPS
+       ========================= */
+    .chips{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      margin-top:16px;
+    }
+
+    .chip{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      padding:8px 12px;
+      border-radius:999px;                 /* bubble / pill */
+      border:1px solid rgba(255,255,255,.14);
+      background:rgba(255,255,255,.06);
+      color:rgba(255,255,255,.92);
+      font-weight:600;
+      font-size:.9rem;
+      line-height:1;
+      letter-spacing:.01em;
+      box-shadow:
+        0 1px 0 rgba(255,255,255,.06) inset,
+        0 8px 18px rgba(0,0,0,.22);
+      backdrop-filter: blur(6px);
+      -webkit-backdrop-filter: blur(6px);
+      transition: transform .18s ease, background .18s ease, border-color .18s ease, box-shadow .18s ease;
+    }
+
+    .chip:hover{
+      transform: translateY(-2px);
+      background:rgba(255,255,255,.09);
+      border-color: rgba(255,255,255,.24);
+      box-shadow:
+        0 1px 0 rgba(255,255,255,.08) inset,
+        0 14px 28px rgba(0,0,0,.28);
+    }
+
+    .chip:active{transform: translateY(0)}
+
+    /* Optional: tiny dot to make chips feel even more "designed" */
+    .chip::before{
+      content:"";
+      width:7px;
+      height:7px;
+      border-radius:999px;
+      background: rgba(255,255,255,.55);
+      margin-right:8px;
+      box-shadow: 0 0 12px rgba(255,255,255,.18);
+    }
+
+    /* Optional: primary chip variant (not required; keep for later if needed) */
+    .chip--primary{
+      background: rgba(99, 102, 241, .20);
+      border-color: rgba(99, 102, 241, .35);
+    }
   </style>
 </head>
+
 <body>
   <a class="skip" href="#main">Skip to content</a>
 
@@ -67,17 +219,18 @@
           Data Engineering, Analytics Engineering, and Applied AI—delivering end-to-end systems with measurable business impact.
         </p>
 
-        <!-- Highlighted organizations (top 4 icons) -->
+        <!-- Featured organizations (top 4 icons) -->
         <div class="orgstrip" data-reveal aria-label="Featured organizations">
           <span class="muted subsection__label">Featured</span>
-          <div class="orgstrip__logos" aria-hidden="false">
-            <img class="orgstrip__logo" src="assets/img/org/usc.svg" alt="University of Southern California" loading="lazy" width="34" height="34" />
-            <img class="orgstrip__logo" src="assets/img/org/quantiphi.svg" alt="Quantiphi" loading="lazy" width="34" height="34" />
-            <img class="orgstrip__logo" src="assets/img/org/sagaftra.svg" alt="SAG-AFTRA Health Plan" loading="lazy" width="34" height="34" />
-            <img class="orgstrip__logo" src="assets/img/org/gcp.svg" alt="Google Cloud" loading="lazy" width="34" height="34" />
+          <div class="orgstrip__logos">
+            <img class="orgstrip__logo" src="assets/img/org/usc.svg" alt="University of Southern California" loading="lazy" width="46" height="46" />
+            <img class="orgstrip__logo" src="assets/img/org/quantiphi.svg" alt="Quantiphi" loading="lazy" width="46" height="46" />
+            <img class="orgstrip__logo" src="assets/img/org/sagaftra.svg" alt="SAG-AFTRA Health Plan" loading="lazy" width="46" height="46" />
+            <img class="orgstrip__logo" src="assets/img/org/gcp.svg" alt="Google Cloud" loading="lazy" width="46" height="46" />
           </div>
         </div>
 
+        <!-- Metrics -->
         <div class="metrics" data-reveal>
           <div class="metric">
             <div class="metric__k">
@@ -134,6 +287,7 @@
       </div>
     </section>
 
+    <!-- Timeline -->
     <section class="section">
       <div class="container">
         <div class="timeline">
@@ -322,14 +476,18 @@
           <span class="brand__mark" aria-hidden="true"></span>
           <span class="brand__text">Sanjana Venkatesh</span>
         </div>
-        <p class="muted">Data Engineer | Analytics | Applied AI</p>
+        <p class="muted">Data Engineering | Analytics | Applied AI</p>
         <p class="muted">Los Angeles, CA</p>
       </div>
+
       <div>
         <h3 class="h4">Contact</h3>
-        <p class="muted"><a href="mailto:sv51119@usc.edu">sv51119@usc.edu</a><br/>
-        <a href="tel:+12139131568">(213) 913-1568</a></p>
+        <p class="muted">
+          <a href="mailto:sv51119@usc.edu">sv51119@usc.edu</a><br/>
+          <a href="tel:+12139131568">(213) 913-1568</a>
+        </p>
       </div>
+
       <div>
         <h3 class="h4">Links</h3>
         <p class="muted">
@@ -338,6 +496,7 @@
         </p>
       </div>
     </div>
+
     <div class="container footer__bottom">
       <span>© <span id="year"></span> Sanjana Venkatesh</span>
       <span class="muted">Built with HTML/CSS/JS • Ready for GitHub Pages</span>
