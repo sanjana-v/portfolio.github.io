@@ -64,7 +64,7 @@
 
     .hero__img {
       width: 100% !important;
-      height: 280px !important;
+      height: 400px !important;
       object-fit: cover !important;
       display: block !important;
     }
@@ -113,6 +113,8 @@
     .badge {
       display: inline-block !important;
       margin-bottom: 1.5rem !important;
+      font-size: 1rem !important;
+      padding: 0.75rem 1.5rem !important;
     }
 
     .hero__title {
@@ -159,8 +161,9 @@
       line-height: 1.5 !important;
     }
 
-    /* Responsive */
-    @media (max-width: 768px) {
+    .section {
+      padding: 2rem 0 !important;
+    }
       .hero__grid {
         grid-template-columns: 1fr !important;
       }
@@ -210,7 +213,7 @@
     <section class="hero">
       <div class="container hero__grid">
         <div>
-          <p class="badge" data-reveal>Data Engineer | Analytics | Cloud Solutions</p>
+          <p class="badge" data-reveal>Data Engineer | Analytics | Cloud Solutions | AI</p>
           <h1 class="hero__title" data-reveal>Transforming data into <span class="u-gradient">actionable insights</span>.</h1>
           <p class="hero__subtitle" data-reveal>
             Data engineer with a passion for designing, building, and optimizing large-scale data pipelines on cloud platforms.
