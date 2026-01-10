@@ -3,19 +3,19 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Sanjana Venkatesh – Data Engineer | Analytics | Cloud Solutions. Portfolio featuring experience, projects, and certifications." />
+  <meta name="description" content="Sanjana Venkatesh – Data Engineer | Analytics | Cloud Solutions | AI. Portfolio featuring experience, projects, and certifications." />
   <title>Sanjana Venkatesh | Data Engineer</title>
   <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="css/style.css" />
   <style>
-    /* Quick fixes for layout issues */
+    /* Theme-aware fixes */
     
     .hero__grid {
       display: grid !important;
       grid-template-columns: 1fr 1fr !important;
       gap: 3rem !important;
       align-items: flex-start !important;
-      margin-bottom: 4rem !important;
+      margin-bottom: 2rem !important;
     }
 
     .hero__grid > div:first-child {
@@ -44,7 +44,7 @@
     }
 
     .meta__v {
-      color: #666 !important;
+      color: inherit !important;
     }
 
     .meta__v a {
@@ -60,13 +60,18 @@
       display: flex !important;
       flex-direction: column !important;
       height: 100% !important;
+      border: none !important;
+      background: transparent !important;
+      padding: 0 !important;
     }
 
     .hero__img {
       width: 100% !important;
-      height: 400px !important;
+      height: auto !important;
       object-fit: cover !important;
       display: block !important;
+      border-radius: 12px !important;
+      margin-bottom: 1.5rem !important;
     }
 
     .hero__card-body {
@@ -75,6 +80,10 @@
       display: flex !important;
       flex-direction: column !important;
       gap: 1rem !important;
+      background-color: rgba(255, 255, 255, 0.05) !important;
+      border: 1px solid rgba(255, 255, 255, 0.1) !important;
+      border-radius: 12px !important;
+      backdrop-filter: blur(10px) !important;
     }
 
     .hero__card-body h2 {
@@ -85,6 +94,7 @@
     .hero__card-body > p {
       margin: 0 !important;
       flex: 1 !important;
+      line-height: 1.6 !important;
     }
 
     .chips {
@@ -96,12 +106,13 @@
 
     .chip {
       display: inline-block !important;
-      background-color: #f5f5f5 !important;
-      border: 1px solid #e0e0e0 !important;
+      background-color: rgba(255, 255, 255, 0.1) !important;
+      border: 1px solid rgba(255, 255, 255, 0.2) !important;
       padding: 0.5rem 1rem !important;
       border-radius: 20px !important;
       font-size: 0.85rem !important;
       white-space: nowrap !important;
+      color: white !important;
     }
 
     .hero__actions {
@@ -113,8 +124,13 @@
     .badge {
       display: inline-block !important;
       margin-bottom: 1.5rem !important;
-      font-size: 1rem !important;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+      color: white !important;
       padding: 0.75rem 1.5rem !important;
+      border-radius: 50px !important;
+      font-weight: 600 !important;
+      font-size: 1rem !important;
+      border: none !important;
     }
 
     .hero__title {
@@ -130,18 +146,18 @@
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)) !important;
       gap: 1.5rem !important;
       margin-top: 2rem !important;
+      margin-bottom: 2rem !important;
     }
 
     .metric {
       padding: 1.5rem !important;
-      background-color: #f9f9f9 !important;
+      background-color: rgba(255, 255, 255, 0.05) !important;
+      border: 1px solid rgba(255, 255, 255, 0.1) !important;
       border-radius: 8px !important;
-      border: 1px solid #e0e0e0 !important;
     }
 
     .metric__k {
       font-size: 0.75rem !important;
-      color: #999 !important;
       text-transform: uppercase !important;
       font-weight: 600 !important;
       margin-bottom: 0.5rem !important;
@@ -151,19 +167,20 @@
     .metric__v {
       font-size: 1.75rem !important;
       font-weight: 700 !important;
-      color: #333 !important;
       margin-bottom: 0.5rem !important;
     }
 
     .metric__s {
       font-size: 0.85rem !important;
-      color: #666 !important;
       line-height: 1.5 !important;
     }
 
     .section {
       padding: 2rem 0 !important;
     }
+
+    /* Responsive */
+    @media (max-width: 768px) {
       .hero__grid {
         grid-template-columns: 1fr !important;
       }
@@ -176,6 +193,10 @@
 
       .hero__actions {
         flex-direction: column !important;
+      }
+
+      .badge {
+        font-size: 0.9rem !important;
       }
     }
   </style>
@@ -234,7 +255,7 @@
         </div>
 
         <div class="hero__card" data-reveal>
-          <img class="hero__img" src="assets/img/profile.png" alt="Portrait placeholder for Sanjana Venkatesh" loading="lazy" />
+          <img class="hero__img" src="assets/img/profile.png" alt="Portrait of Sanjana Venkatesh" loading="lazy" />
           <div class="hero__card-body">
             <h2 class="h3">About</h2>
             <p class="muted">
@@ -396,7 +417,7 @@
     <div class="container footer__grid">
       <div>
         <div class="footer__brand">Sanjana Venkatesh</div>
-        <p class="muted">Data Engineer | Analytics | Cloud Solutions</p>
+        <p class="muted">Data Engineer | Analytics | Cloud Solutions | AI</p>
       </div>
       <div>
         <div class="footer__k">Email</div>
