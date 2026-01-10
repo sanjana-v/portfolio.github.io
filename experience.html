@@ -3,11 +3,33 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Sanjana Venkatesh — Experience." />
+  <meta name="description" content="Sanjana Venkatesh — Experience in Data Engineering, Analytics Engineering, and Applied AI." />
   <title>Experience | Sanjana Venkatesh</title>
   <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="css/style.css" />
   <script defer src="js/main.js"></script>
+
+  <!-- Page-local styles for the new logo + icon elements.
+       If you prefer, move these rules into css/style.css. -->
+  <style>
+    .orgstrip{display:flex;align-items:center;gap:12px;margin-top:14px;flex-wrap:wrap}
+    .orgstrip__logos{display:flex;gap:10px;flex-wrap:wrap}
+    .orgstrip__logo{width:34px;height:34px;border-radius:10px;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.04);padding:6px}
+    .card__head--withlogo{gap:14px}
+    .org{display:flex;align-items:flex-start;gap:12px}
+    .org__logo{width:36px;height:36px;border-radius:12px;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.04);padding:7px;flex:0 0 auto}
+    .org__title{min-width:0}
+    .org__meta{display:flex;gap:10px;flex-wrap:wrap}
+    .org__meta span{white-space:nowrap}
+    .metric__icon{width:20px;height:20px;display:inline-flex;align-items:center;justify-content:center;margin-right:10px;opacity:.9}
+    .metric__k{display:flex;align-items:center}
+    .subsection__label{letter-spacing:.08em;text-transform:uppercase;font-size:.78rem}
+    .impact{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:14px}
+    @media (max-width:720px){.impact{grid-template-columns:1fr}}
+    .impact__item{padding:12px;border:1px solid rgba(255,255,255,.10);border-radius:14px;background:rgba(255,255,255,.03)}
+    .impact__k{font-weight:650}
+    .impact__v{opacity:.85;margin-top:4px}
+  </style>
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
@@ -42,14 +64,72 @@
       <div class="container">
         <h1 class="page__title" data-reveal>Experience</h1>
         <p class="page__subtitle" data-reveal>
-          Building scalable data platforms, modernizing cloud infrastructure, and operationalizing analytics—end to end.
+          Data Engineering, Analytics Engineering, and Applied AI—delivering end-to-end systems with measurable business impact.
         </p>
 
+        <!-- Highlighted organizations (top 4 icons) -->
+        <div class="orgstrip" data-reveal aria-label="Featured organizations">
+          <span class="muted subsection__label">Featured</span>
+          <div class="orgstrip__logos" aria-hidden="false">
+            <img class="orgstrip__logo" src="assets/img/org/usc.svg" alt="University of Southern California" loading="lazy" width="34" height="34" />
+            <img class="orgstrip__logo" src="assets/img/org/quantiphi.svg" alt="Quantiphi" loading="lazy" width="34" height="34" />
+            <img class="orgstrip__logo" src="assets/img/org/sagaftra.svg" alt="SAG-AFTRA Health Plan" loading="lazy" width="34" height="34" />
+            <img class="orgstrip__logo" src="assets/img/org/gcp.svg" alt="Google Cloud" loading="lazy" width="34" height="34" />
+          </div>
+        </div>
+
         <div class="metrics" data-reveal>
-          <div class="metric"><div class="metric__k">$10M</div><div class="metric__v">annual infra savings (migration)</div></div>
-          <div class="metric"><div class="metric__k">150M+</div><div class="metric__v">records/day processed (streaming)</div></div>
-          <div class="metric"><div class="metric__k">1,500+</div><div class="metric__v">tables migrated w/ 99%+ accuracy</div></div>
-          <div class="metric"><div class="metric__k">16 hrs/day</div><div class="metric__v">manual ops eliminated (Airflow)</div></div>
+          <div class="metric">
+            <div class="metric__k">
+              <span class="metric__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7 17V9m5 8V7m5 10v-5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                  <path d="M4 20h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+              </span>
+              $10M
+            </div>
+            <div class="metric__v">annual infra savings (cloud modernization)</div>
+          </div>
+
+          <div class="metric">
+            <div class="metric__k">
+              <span class="metric__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M13 2L4 14h7l-1 8 9-12h-7l1-8z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                </svg>
+              </span>
+              150M+
+            </div>
+            <div class="metric__v">records/day processed (streaming)</div>
+          </div>
+
+          <div class="metric">
+            <div class="metric__k">
+              <span class="metric__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M4 6c0-1.1 3.6-2 8-2s8 .9 8 2-3.6 2-8 2-8-.9-8-2z" stroke="currentColor" stroke-width="2"/>
+                  <path d="M4 6v6c0 1.1 3.6 2 8 2s8-.9 8-2V6" stroke="currentColor" stroke-width="2"/>
+                  <path d="M4 12v6c0 1.1 3.6 2 8 2s8-.9 8-2v-6" stroke="currentColor" stroke-width="2"/>
+                </svg>
+              </span>
+              1,500+
+            </div>
+            <div class="metric__v">tables migrated with 99%+ accuracy</div>
+          </div>
+
+          <div class="metric">
+            <div class="metric__k">
+              <span class="metric__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 8v4l3 2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                  <path d="M21 12a9 9 0 1 1-9-9 9 9 0 0 1 9 9z" stroke="currentColor" stroke-width="2"/>
+                </svg>
+              </span>
+              16 hrs/day
+            </div>
+            <div class="metric__v">manual ops eliminated (Airflow)</div>
+          </div>
         </div>
       </div>
     </section>
@@ -58,70 +138,130 @@
       <div class="container">
         <div class="timeline">
 
+          <!-- USC -->
           <article class="titem" data-reveal>
             <div class="titem__dot" aria-hidden="true"></div>
             <div class="card">
-              <div class="card__head">
-                <div>
-                  <h2 class="h3">Data Analyst Research Assistant</h2>
-                  <p class="muted">University of Southern California — Los Angeles, CA</p>
+              <div class="card__head card__head--withlogo">
+                <div class="org">
+                  <img class="org__logo" src="assets/img/org/usc.svg" alt="University of Southern California" loading="lazy" width="36" height="36" />
+                  <div class="org__title">
+                    <h2 class="h3">Data Analyst Research Assistant <span class="muted">— Applied AI / MLOps</span></h2>
+                    <p class="muted org__meta">
+                      <span>University of Southern California</span><span aria-hidden="true">•</span><span>Los Angeles, CA</span>
+                    </p>
+                  </div>
                 </div>
                 <div class="tag">May 2025 – Present</div>
               </div>
+
+              <h3 class="h4 mt16">Applied AI &amp; ML Infrastructure</h3>
               <ul class="list">
-                <li>Orchestrated ML pipelines on Vertex AI and Snowflake; implemented CI/CD automation with Git, reducing ML training time by <strong>2 hours</strong> per cycle.</li>
-                <li>Built exploratory analytics in Tableau and engineered advanced features to improve model performance.</li>
-                <li>Optimized BigQuery queries via partitioning and clustering, driving a <strong>38% reduction</strong> in query costs.</li>
+                <li>Orchestrated ML training workflows across <strong>Vertex AI</strong> and <strong>Snowflake</strong>; introduced Git-based CI/CD automation to standardize runs and reduce training time by <strong>2 hours</strong> per cycle.</li>
+                <li>Operationalized reproducible experimentation by versioning data extracts, feature definitions, and training artifacts to improve traceability and reviewability in research iterations.</li>
+                <li>Built feature engineering pipelines (Python/SQL) and collaborated with stakeholders to translate research requirements into production-ready ML features.</li>
               </ul>
+
+              <h3 class="h4 mt16">Analytics &amp; Cost Optimization</h3>
+              <ul class="list">
+                <li>Developed exploratory analysis in <strong>Tableau</strong> to surface signal quality issues, guide feature prioritization, and accelerate model iteration.</li>
+                <li>Optimized <strong>BigQuery</strong> workloads through partitioning and clustering strategies, driving a <strong>38%</strong> reduction in query costs while preserving analytical fidelity.</li>
+              </ul>
+
+              <h3 class="h4 mt16">Applied AI: LLM-Enabled Analytics (Research)</h3>
+              <ul class="list">
+                <li>Prototyped retrieval-augmented analysis patterns (embeddings + semantic retrieval) to enable natural-language exploration of datasets, documentation, and research outputs.</li>
+                <li>Established lightweight evaluation checks (e.g., relevance and consistency) to keep model-assisted outputs auditable and aligned with source data.</li>
+              </ul>
+
+              <div class="impact" aria-label="Key outcomes">
+                <div class="impact__item">
+                  <div class="impact__k">Faster ML cycles</div>
+                  <div class="impact__v">2 hours saved per training cycle via CI/CD + standardization</div>
+                </div>
+                <div class="impact__item">
+                  <div class="impact__k">Lower analytics spend</div>
+                  <div class="impact__v">38% BigQuery cost reduction through physical design optimization</div>
+                </div>
+              </div>
+
               <div class="chips mt16">
                 <span class="chip">Vertex AI</span>
                 <span class="chip">Snowflake</span>
                 <span class="chip">BigQuery</span>
+                <span class="chip">Python</span>
+                <span class="chip">SQL</span>
+                <span class="chip">MLOps</span>
+                <span class="chip">RAG</span>
+                <span class="chip">Embeddings</span>
+                <span class="chip">LangChain</span>
                 <span class="chip">Tableau</span>
                 <span class="chip">CI/CD</span>
               </div>
             </div>
           </article>
 
+          <!-- SAG-AFTRA -->
           <article class="titem" data-reveal>
             <div class="titem__dot" aria-hidden="true"></div>
             <div class="card">
-              <div class="card__head">
-                <div>
-                  <h2 class="h3">Data Analyst Intern</h2>
-                  <p class="muted">SAG-AFTRA Health Plan — Burbank, CA</p>
+              <div class="card__head card__head--withlogo">
+                <div class="org">
+                  <img class="org__logo" src="assets/img/org/sagaftra.svg" alt="SAG-AFTRA Health Plan" loading="lazy" width="36" height="36" />
+                  <div class="org__title">
+                    <h2 class="h3">Data Analyst Intern <span class="muted">— Data Platforms &amp; Analytics Ops</span></h2>
+                    <p class="muted org__meta">
+                      <span>SAG-AFTRA Health Plan</span><span aria-hidden="true">•</span><span>Burbank, CA</span>
+                    </p>
+                  </div>
                 </div>
                 <div class="tag">May 2024 – Aug 2024</div>
               </div>
+
+              <h3 class="h4 mt16">Cloud Cost Optimization &amp; Reliability</h3>
               <ul class="list">
-                <li>Managed AWS infrastructure for big data analytics; optimized EC2 sizing and scheduling, reducing operating costs by <strong>$23k annually</strong>.</li>
-                <li>Automated data ingestion from ThoughtSpot APIs into Snowflake via REST integrations, reducing data latency by <strong>42%</strong>.</li>
-                <li>Implemented monitoring and alerting standards for real-time pipeline health and operational reliability.</li>
+                <li>Managed <strong>AWS</strong> infrastructure for big data analytics; optimized EC2 sizing and scheduling, reducing operating costs by <strong>$23k annually</strong>.</li>
+                <li>Implemented monitoring and alerting standards for pipeline health (latency, failures, SLA breaches), improving operational reliability and time-to-detect.</li>
               </ul>
+
+              <h3 class="h4 mt16">Data Integration &amp; Metadata Automation</h3>
+              <ul class="list">
+                <li>Automated ingestion from <strong>ThoughtSpot</strong> APIs into <strong>Snowflake</strong> via REST integrations, reducing data latency by <strong>42%</strong>.</li>
+                <li>Automated ThoughtSpot worksheet metadata synchronization using Python + Snowflake business glossary inputs (TML processing), improving governance and self-serve discoverability.</li>
+              </ul>
+
               <div class="chips mt16">
                 <span class="chip">AWS</span>
                 <span class="chip">EC2</span>
                 <span class="chip">Snowflake</span>
+                <span class="chip">Python</span>
                 <span class="chip">REST APIs</span>
+                <span class="chip">ThoughtSpot</span>
                 <span class="chip">Observability</span>
               </div>
             </div>
           </article>
 
+          <!-- Quantiphi -->
           <article class="titem" data-reveal>
             <div class="titem__dot" aria-hidden="true"></div>
             <div class="card">
-              <div class="card__head">
-                <div>
-                  <h2 class="h3">Data Engineer</h2>
-                  <p class="muted">Quantiphi, Inc. — Bengaluru, India</p>
+              <div class="card__head card__head--withlogo">
+                <div class="org">
+                  <img class="org__logo" src="assets/img/org/quantiphi.svg" alt="Quantiphi" loading="lazy" width="36" height="36" />
+                  <div class="org__title">
+                    <h2 class="h3">Data Engineer <span class="muted">— Cloud Migration, Streaming, Analytics Enablement</span></h2>
+                    <p class="muted org__meta">
+                      <span>Quantiphi, Inc.</span><span aria-hidden="true">•</span><span>Bengaluru, India</span>
+                    </p>
+                  </div>
                 </div>
                 <div class="tag">Feb 2021 – Jul 2023</div>
               </div>
 
               <h3 class="h4 mt16">Legacy Infrastructure Modernization</h3>
               <ul class="list">
-                <li>Led migration of a legacy Hadoop estate to Google Cloud Platform; modernized <strong>1,500+</strong> Hadoop/MapReduce jobs to Dataproc.</li>
+                <li>Led migration of a legacy Hadoop estate to <strong>Google Cloud Platform</strong>; modernized <strong>1,500+</strong> Hadoop/MapReduce jobs to Dataproc.</li>
                 <li>Optimized Apache Spark parameters (executors, shuffle management, SSD balancing), delivering <strong>$10M</strong> annual infrastructure savings.</li>
               </ul>
 
@@ -135,6 +275,7 @@
               <ul class="list">
                 <li>Productionized <strong>50+</strong> ETL/ELT pipelines using Apache Airflow (GCS → BigQuery), eliminating <strong>16 hours/day</strong> of manual operations.</li>
                 <li>Authored <strong>100+</strong> LookML models in Looker to operationalize a governed metrics layer; dashboards enabled <strong>$1.2M</strong> annual savings.</li>
+                <li>Presented KPI insights and adoption plan to client VPs, enabling cross-functional rollout of governed metrics and self-serve analytics.</li>
               </ul>
 
               <h3 class="h4 mt16">Real-Time Data Processing</h3>
@@ -181,7 +322,7 @@
           <span class="brand__mark" aria-hidden="true"></span>
           <span class="brand__text">Sanjana Venkatesh</span>
         </div>
-        <p class="muted">Data Engineer | Analytics | Cloud Solutions</p>
+        <p class="muted">Data Engineer | Analytics | Applied AI</p>
         <p class="muted">Los Angeles, CA</p>
       </div>
       <div>
