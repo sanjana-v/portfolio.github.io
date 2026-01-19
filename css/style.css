@@ -412,3 +412,42 @@ a { color: inherit; text-decoration: none; }
   .grid--3 { grid-template-columns: 1fr; }
   .project { grid-template-columns: 1fr; }
 }
+/* ---- Layout Fixes ---- */
+
+.hero__grid {
+  grid-template-columns: 1.4fr .6fr;
+  gap: 3rem;
+  align-items: flex-start;
+}
+
+.hero__card {
+  background: linear-gradient(180deg, rgba(17,31,58,.94), rgba(15,25,48,.94));
+  border: 1px solid rgba(255,255,255,.08);
+  border-radius: 18px;
+  box-shadow: var(--shadow);
+  padding: 18px;
+}
+
+.hero__card-body {
+  background: transparent;
+  border: none;
+  padding-top: 1rem;
+}
+
+.hero__img {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  border-radius: 14px;
+}
+
+.metrics {
+  grid-template-columns: repeat(4, minmax(0,1fr));
+  gap: 1.25rem;
+}
+
+.card {
+  height: 100%;
+}
+
+
