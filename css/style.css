@@ -412,3 +412,36 @@ a { color: inherit; text-decoration: none; }
   .grid--3 { grid-template-columns: 1fr; }
   .project { grid-template-columns: 1fr; }
 }
+/* --- About Left Section --- */
+.about-left {
+  margin-top: 18px;
+  padding: 16px;
+  border-radius: var(--radius);
+  background: rgba(255,255,255,.04);
+  border: 1px solid rgba(255,255,255,.08);
+}
+
+.about-left .h3 {
+  margin: 0 0 6px;
+}
+
+.about-text {
+  max-width: 65ch;
+}
+
+/* Chips */
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.chip {
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  border: 1px solid rgba(255,255,255,.12);
+  background: rgba(255,255,255,.05);
+  color: var(--muted);
+}
